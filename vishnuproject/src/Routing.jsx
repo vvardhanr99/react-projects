@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import Listing from './components/Listing/Listing'
 import Details from './components/Details/Details'
 import BookingDetails from './components/Bookings/BookingDetails'
+import BookingPage from './components/Bookings/BookingPage'
 
 export default class Routing extends Component {
     render() {
@@ -19,6 +20,7 @@ export default class Routing extends Component {
                <Route path='/list/:id'  component={Listing}/>
                <Route path='/details/:id'  component={Details}/>
                <Route path='/bookingdetails/:name'  component={BookingDetails}/>
+               <Route path='/booking' component={BookingPage}/>
                </BrowserRouter> 
                 </div>
                

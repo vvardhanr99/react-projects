@@ -1,0 +1,20 @@
+{
+     "booking":[
+        {
+            "id": 48667,
+            "hotel_name": "DoubleTree by Hilton",
+            "name": "Aakash",
+            "phone": "86786786",
+            "cost": "2419"
+        },
+        {
+            "id": 48667,
+            "hotel_name": "DoubleTree by Hilton",
+            "name": "Aakash",
+            "phone": "86786786",
+            "cost": "2419"
+        }
+    ]
+
+}
+   

@@ -1,4 +1,4 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './components/Home'
-ReactDOM.render(<Home/>,document.getElementById('root'))
+import Routing from './Routing'
+ReactDOM.render(<Routing/>,document.getElementById('root'))

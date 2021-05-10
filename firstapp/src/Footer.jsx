@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <div>
                <hr />
-               <h1>Footer</h1>
+             <h4 style={{textAlign:'center'}}>&copy; verified</h4>
             </div>
         )
     }

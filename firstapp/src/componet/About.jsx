@@ -1,30 +1,27 @@
-import React, { PureComponent } from 'react'
-import Comp from './Comp';
-export default class About extends PureComponent {
+import React, { Component } from 'react'
+import Comp from './Comp'
+
+export default class About extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-            name:'Vishnu',
-            count:0
+             unit:'Kg'
         }
-}
-componentDidMount(){
-    setInterval(() => {
-       this.setState({name:'Vishnu'}) 
-    }, 2000);
-}
-handleChange=()=>{
-    this.setState({count:this.state.count +1})
-}
-render() {
-        console.log("Pure Component"+ this.state.name)
+    
+    }
+        changeUnit=(item)=>{
+        this.setState({unit:item})
+    }
+    render() {
         return (
             <div>
-               <p>{this.state.name}</p>
-               <Comp/>
-               <p>{this.state.count}</p>
-               <button onClick={this.handleChange}>Click to update Count</button>
+                <h1>Pass data From child to Parent</h1>
+                <Comp data={{
+                    unit:this.state.unit,
+                    changeUnit:this.changeUnit
+                
+                }}/>
             </div>
         )
     }

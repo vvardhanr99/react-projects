@@ -1,27 +1,24 @@
 import React from 'react'
 
-export default function Home1() {
-    
-    return (
-        <div>
-           <a onClick={this.props.onClick}>Click me</a>
-        </div>
-    )
+const Home1 =(OriginalComponent,data)=>{
+    return class extends React.Component{
+        constructor(props) {
+            super(props)
+        
+            this.state = {
+                 
+            }
+        }
+        
+       render(){
+          return(
+           <>
+           <OriginalComponent/>
+           </>
+           
+       )   
+       }
+      
+    }
 }
-
-
-
-{/*var Child = React.createClass({
-    render: function() {
-      <a onClick={this.props.onClick}>Click me</a>
-    }
-  });
-  
-  var Parent = React.createClass({
-    onClick: function(event) {
-      // event.component.props ?why is this not available?
-    },
-    render: function() {
-      <Child onClick={this.onClick} />
-    }
-  });*/}
+export default Home1

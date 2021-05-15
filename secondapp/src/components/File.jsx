@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Childref from './Childref'
 
 export default class File extends Component {
     constructor(props) {
@@ -6,13 +7,14 @@ export default class File extends Component {
     
         this.inputref = React.createRef()
     }
-    componentDidMount(){
+    handleClick=()=>{
         this.inputref.current.focus()
     }
     render() {
         return (
             <React.Fragment>
-                <h3><input type="text"  ref={this.inputref} /></h3>
+             <Childref ref={this.inputref}/>
+              <button onClick={this.handleClick}>Click</button>
             </React.Fragment>
         )
     }

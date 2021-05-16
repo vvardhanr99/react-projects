@@ -1,14 +1,15 @@
 import React from 'react'
-import {MessagesContext} from './Context2'
+import  {MessagesContext} from './Context2'
 export default function Context1() {
     return (
         <div>
-            <h1>Context</h1>
+            <h1 style={{'backgroundColor':'lightblue','padding':'5px'}}>Context</h1>
             <MessagesContext.Consumer>
                 {(value)=><div>
-                    {value.username}    
+                    {value.username}   
                 </div>}
-            </MessagesContext.Consumer>
+            </MessagesContext.Consumer> 
+
         </div>
     )
 }

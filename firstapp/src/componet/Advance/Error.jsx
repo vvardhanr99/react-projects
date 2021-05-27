@@ -12,7 +12,7 @@ export default class Error extends Component {
         this.setState({count:this.state.count +1})
     }
     render() {
-        if(this.state.count == 5){
+        if(this.state.count === 5){
             throw new Error("Error")
         }else{
             return (
